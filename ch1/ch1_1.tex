@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage[left=8em,right=8em]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{lineno}
+\usepackage{relsize}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+}
+%\linenumbers
+\renewcommand*{\proofname}{Proof}
+\date{}
+\author{}
+\begin{document}
+	
+	\centerline{\textbf{Chapter 1.1 - Exercises}}
+	
+	\textbf{Ex 1. i) Proposition:} If $ax=a$ for some number $a \not= 0$, then $x=1$.
+	\begin{proof}
+		(Direct)\\
+		Suppose $ax=a$ for some number $a \not= 0$. Then $ax=a \implies x=a \times a^{-1} = 1$.
+	\end{proof}
+	
+	\textbf{Ex 1. ii) Proposition:} $x^2-y^2=(x-y)(x+y)$.
+	\begin{proof}
+		(Direct)\\
+		Observe that $(x+y)(x-y) = x^2-xy+xy-y^2=x^2-y^2$.
+	\end{proof}
+	
+	\textbf{Ex 1. iii) Proposition:} If $x^2=y^2$, then $x=y$ or $x=-y$.
+	\begin{proof}
+		(Direct)\\
+		Given $x^2=y^2$. Because $x^2=|x|^2$, it follows that $\sqrt{|x|^2}={y^2} \implies |x|=y$. Thus $x=y$ or $x=-y$.
+	\end{proof}
+	
+	\textbf{Ex 1. iv) Proposition:} $x^3-y^3=(x-y)(x^2+xy+y^2)$.
+	\begin{proof}
+		(Direct)\\
+		Observe that $(x-y)(x^2+xy+y^2)=x^3+x^2y+xy^2-x^2y-xy^2-y^3=x^3-y^3$.
+	\end{proof}
+	
+	\textbf{Ex 1. v) Proposition:} $x^n-y^n=(x-y)(x^{n-1} + x^{n-2}y + ... + xy^{n-2} + y^{n-1})$.
+	\begin{proof}
+		(Direct)\\
+		Observe that
+		\begin{align*}
+			(x-y)(x^{n-1} + x^{n-2}y + ... + xy^{n-2} + y^{n-1}) &=\\
+			x(x^{n-1} + x^{n-2}y + ... + xy^{n-2} + y^{n-1})-y(x^{n-1} + x^{n-2}y + ... + xy^{n-2} + y^{n-1}) &=\\
+			(x^{n} + x^{n-1}y + ... + x^2y^{n-2} + xy^{n-1})-
+			(x^{n-1}y + x^{n-2}y^2 + ... + xy^{n-1} + y^{n}) &=\\
+			x^{n} + (x^{n-1}y-x^{n-1}y) + (x^{n-2}y^2-x^{n-2}y^2) + ... + (x^{2}y^{n-2}-x^{2}y^{n-2}) + (xy^{n-1}-xy^{n-1}) - y^n &=\\
+			x^n-y^n\\
+		\end{align*}
+	\end{proof}
+	
+	\textbf{Ex 1. vi) Proposition:} $x^3+y^3=(x+y)(x^2-xy+y^2)$.
+	\begin{proof}
+		(Direct)\\
+		Observe that $(x+y)(x^2-xy+y^2)=x^3-x^2y+xy^2+x^2y-xy^2+y^3=x^3+y^3$.
+	\end{proof}
+	
+	\textbf{Ex 2.} Because $x=y$ implies $x-y=0$, we can not divide both sides of $(x+y)(x-y)=y(x-y)$ with $x-y=0$.\\
+	
+	\textbf{Ex 3. i) Proposition:} If $b,c \not= 0$, then $\dfrac{a}{b}=\dfrac{ac}{bc}$.\\
+	\begin{proof}
+		(Direct)\\
+		Given $b,c \not = 0$. Then $\dfrac{a}{b}=\dfrac{ac}{bc}$ implies $abc=abc$.
+	\end{proof}
+
+	\textbf{Ex 3. ii) Proposition:} If $b,d \not=0$, then $\dfrac{a}{b}+\dfrac{c}{d}=\dfrac{ad+bc}{bd}$.\\
+	\begin{proof}
+		(Direct)\\
+		Given $b,d \not= 0$. Observe that $\dfrac{a}{b}+\dfrac{c}{d}=\dfrac{ad}{bd}+\dfrac{bc}{bd}=\dfrac{ad+bc}{bd}$.
+	\end{proof}
+
+	\textbf{Ex 3. iii) Proposition:} If $a,b \not=0$, then $(ab)^{-1}=a^{-1}b^{-1}$.\\
+	\begin{proof}
+		$ $\\
+		TODO\\
+	\end{proof}
+
+	\textbf{Ex 3. iv) Proposition:} If $b,d \not=0$, then $\dfrac{a}{b} \times \dfrac{c}{d}=\dfrac{ac}{db}$.\\
+	\begin{proof}
+		$ $\\
+		TODO\\
+	\end{proof}
+
+	\textbf{Ex 3. v) Proposition:} If $b,c,d \not=0$, then $\dfrac{a}{b} \div \dfrac{c}{d}=\dfrac{ad}{bc}$.\\
+	\begin{proof}
+		$ $\\
+		TODO\\
+	\end{proof}
+
+	\textbf{Ex 3. vi) Proposition:} If $b,d \not=0$, then $\dfrac{a}{b} = \dfrac{c}{d}$ if and only if $ad=bc$. Also determine when $\dfrac{a}{b}=\dfrac{b}{a}$.\\
+	\begin{proof}
+		$ $\\
+		TODO\\
+	\end{proof}
+
+	
+\end{document}
